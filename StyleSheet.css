@@ -1,4 +1,56 @@
-﻿.carousel-indicators li {
+﻿p
+{
+    font-size:1.5em;
+}
+
+/*start of navbar styling*/
+.navbar-default
+{
+    background-color: #2979FF;
+}
+
+.navbar-default .navbar-brand {
+    color: #212121;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #BDBDBD;
+}
+
+.nav.navbar-nav li a {
+    color: white;
+    -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:color .2s ease-out, background 1s ease-in;
+}
+
+.nav.navbar-nav li:hover a {
+    color: blue;
+    background:white;
+}
+
+ .navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:focus {
+      color: black;
+      background: white;
+ }
+
+ .navbar-default .navbar-nav > .active > a:hover
+ {
+     color:blue;
+ }
+
+ .dropdown-menu
+ {
+     background-color:rgb(41,121,255);
+ }
+
+ /*end of navbar styling*/
+
+.carousel-indicators li {
     background-color: dodgerblue;
 }
 
@@ -6,14 +58,41 @@
     background-color: lightgreen;
 }
 
+.hiddenText{
+    display:none;
+    padding-left:12px;
+}
+
 #introduction
 {
-    padding-top:50px;
+    background-image: url("images/dublinbackground.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   color:white;
+    padding-top:30px;
     height: 100vh;
+
+}
+
+#introduction .row
+{
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
+}
+
+#introduction .container-fluid
+{
+    background-color: rgba(41, 121, 255,0.5);
 }
 
 #introduction img
 {
+    max-width:220px;
+    max-height:220px;
     float:left;
 }
 
@@ -21,6 +100,70 @@
 {
     float:right;
     
+}
+
+/*//bradsknutson.com/blog/css-button-with-sliding-background-color/*/
+.button_sliding_bg {
+    color: #31302B;
+    background: #FFF;
+    padding: 12px 17px;
+    margin: 25px;
+    font-family: 'OpenSansBold', sans-serif;
+    border: 3px solid #31302B;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #31302B;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+
+}
+    .button_sliding_bg:hover {
+        box-shadow: inset 0 100px 0 0 #31302B;
+        color: #FFF;
+    }
+
+    .button_sliding_bg a{
+        text-decoration:none;
+        color: #31302B;
+    }
+    .button_sliding_bg:hover a{
+        color:#fff;
+    }
+    .button_sliding_bg:hover a:visited{
+        color: #fff;
+    }
+
+    .button_sliding_bg a:visited{
+        color: #31302B;
+    }
+
+    .button_sliding_bg a:hover
+    {
+        color: #FFF;
+    }
+
+#displayHotelImagesButton 
+{
+    max-width: 258px;
+    margin: 0 auto;
+}
+
+.alert
+{
+    display:none;
+}
+
+.element
+{
+    max-width:1000px;
+    margin-left: auto ;
+  margin-right: auto ;
 }
 
 .fa-twitter:hover
@@ -33,25 +176,22 @@
     color:blue;
 }
 
-.fa-github:hover
-{
-    color:mediumpurple;
-}
-.navbar-brand
-{
-    font-family:cursive;
+.fa-github:hover {
+    color: mediumpurple;
 }
 
-
-#education,#about,#bourguest,#hotelProject,#homesecurity,#introduction{
+#education,#about,#bourguest,#projects,#homesecurity,#experience{
     padding-top:30px;
 }
 
-
-#hotelProject h1,p,#homesecurity h1,p,#bourguest h1{
+#education h1, #about h1, #bourguest h2, #hotelProject h2, #homesecurity h2,#experience h1,#projects h1{
     text-align:center;
 }
 
+#bourguest p, #hotelProject p, #homesecurity p,#about p
+{
+    text-align:center;
+}
 
 #bourguest img {
     display: block;
@@ -60,88 +200,143 @@
 }
 
 
-#hotelCarousel{
-    margin: auto;
-    width:603px;
-    height:360px;
+#hotelCarousel .item img{
+    width:100%;
 }
 
+#contactform
+{
+    overflow:auto;
+}
+
+#contactform .error
+{
+    color: red;
+}
+
+#sendMessageButton
+{
+    float:right;
+}
+
+/*Accordion css*/
+.first-panel
+{
+    padding-top:20px;
+}
+
+.panel-title
+{
+    text-align:center;
+}
+
+.panel-group .panel-default .panel-heading{
+    background-color:#2979FF;
+    color:white;
+}
+/*end of accordion css*/
+
+/*footer styling*/
 #footer{
-    min-height: 50px;
-    background-color: #292929;
+    background-color: #2979FF;
+    overflow:auto;
 }
 
-#footer p {
-        color: white;
-        text-align: center;
-        font-size: 2em;
+#footer p
+{
+    color:white;
+    font-size:1em !important;
+}
+
+#footer a
+{
+     color: white;
+    -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:color .2s ease-out, background 1s ease-in;
+  text-align:center;
+}
+
+#footer a:hover
+{
+    color:blue;
+}
+
+/*slide animation  //www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_company_complete_animation*/
+.slideanim {
+    visibility:hidden;
+
+}
+
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/*End of animations*/
+
+/*used to scale introduction section for mobile devices*/
+@media (max-width: 480px) {
+    #introduction {
+        height: 100%;
     }
 
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+    #introduction .row{
+        margin:0 auto;
+    }
+
+    .hiddenText {
+        display: inline;
+    }
+
+    #displayHotelImagesButton {
+        width: 50%;
+        margin: 0 auto;
+    }
 }
 
-/*//ianlunn.github.io/Hover*/
-/* Shutter In Vertical */
-.hvr-shutter-in-vertical {
-  display: inline-block;
-  vertical-align: middle;
-  background: rgba(0,0,0,0);
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  background: #2098d1;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+@media (max-width: 1024px) {
+    #introduction {
+        height: 100%;
+    }
+     #introduction .row{
+        margin:0 auto;
+    }
 }
-.hvr-shutter-in-vertical:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #e1e1e1;
-  -webkit-transform: scaleY(1);
-  transform: scaleY(1);
-  -webkit-transform-origin: 50%;
-  transform-origin: 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-shutter-in-vertical:hover, .hvr-shutter-in-vertical:focus, .hvr-shutter-in-vertical:active {
-  color: white;
-}
-.hvr-shutter-in-vertical:hover:before, .hvr-shutter-in-vertical:focus:before, .hvr-shutter-in-vertical:active:before {
-  -webkit-transform: scaleY(0);
-  transform: scaleY(0);
+
+@media (max-width: 767px) {
+    .hiddenText {
+        display: inline;
+    }
 }

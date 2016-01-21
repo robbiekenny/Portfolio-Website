@@ -1,0 +1,58 @@
+﻿#box {
+    height:200px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    margin: 5% auto 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.javaBox
+{
+    background: url("images/experiences/java.png") no-repeat center;
+}
+
+.androidBox
+{
+    background: url("images/experiences/android-logo-png.png") no-repeat center;
+}
+
+.cplusplusBox
+{
+    background: url("images/experiences/Cpluspus.png") no-repeat center;
+}
+
+.csharpBox
+{
+    background: url("images/experiences/cs.png") no-repeat center;
+}
+
+.sqlBox
+{
+    background: url("images/experiences/sql.png") no-repeat center;
+}
+
+.htmlBox
+{
+    background: url("images/experiences/html.png") no-repeat center;
+}
+#overlay {
+    background: rgba(41,121,255,.85);
+    text-align: center;
+    padding: 45px 0 66px 0;
+    opacity: 0;
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+    height:100%;
+}
+
+#box:hover #overlay {
+    opacity: 1;
+}
+
+#text {
+    font-family: Helvetica;
+    font-weight: 900;
+    color: rgba(255,255,255,.85);
+    
+}
